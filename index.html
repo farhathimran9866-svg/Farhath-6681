@@ -3,218 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional portfolio showcasing web development projects and expertise. Explore my work in HTML5, CSS3, and JavaScript.">
-    <meta name="keywords" content="web developer, portfolio, HTML5, CSS3, JavaScript, accessibility, WCAG">
-    <meta name="author" content="Farhath">
-    <meta name="theme-color" content="#2c3e50">
-    <meta property="og:title" content="Professional Portfolio - Web Developer">
-    <meta property="og:description" content="Explore my latest web development projects and professional experience.">
+
+    <title>John Doe | Web Developer Portfolio</title>
+
+    <meta name="description"
+        content="Portfolio of John Doe, Web Developer specializing in HTML, CSS, JavaScript, and accessible web design.">
+
+    <meta name="keywords"
+        content="Web Developer, Portfolio, HTML5, CSS3, JavaScript, Accessibility">
+
+    <meta name="author" content="John Doe">
+
+    <meta property="og:title" content="John Doe Portfolio">
+    <meta property="og:description"
+        content="Professional portfolio showcasing projects and skills.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://yourportfolio.com/og-image.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <meta name="canonical" content="https://yourportfolio.com">
-    <title>Home - Professional Portfolio | Web Developer</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='75' font-size='75' font-weight='bold' fill='%232c3e50'%3EP%3C/text%3E%3C/svg%3E">
+
+    <link rel="canonical" href="https://www.johndoe.com">
 </head>
+
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
 
     <header role="banner">
-        <nav role="navigation" aria-label="Main navigation">
-            <div class="navbar-container">
-                <a href="index.html" class="logo" aria-current="page">Portfolio</a>
-                
-                <button 
-                    class="menu-toggle" 
-                    aria-label="Toggle navigation menu" 
-                    aria-expanded="false"
-                    aria-controls="nav-menu">
-                    <span aria-hidden="true">☰</span>
-                </button>
+        <h1>John Doe</h1>
+        <p>Web Developer & Accessibility Advocate</p>
 
-                <ul id="nav-menu" class="nav-menu" role="menubar">
-                    <li role="none">
-                        <a href="index.html" role="menuitem" aria-current="page">Home</a>
-                    </li>
-                    <li role="none">
-                        <a href="projects.html" role="menuitem">Projects</a>
-                    </li>
-                    <li role="none">
-                        <a href="about.html" role="menuitem">About</a>
-                    </li>
-                    <li role="none">
-                        <a href="contact.html" role="menuitem">Contact</a>
-                    </li>
-                </ul>
-            </div>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
     <main id="main-content">
-        <!-- Hero Section -->
-        <section class="hero" aria-labelledby="hero-heading">
-            <div class="hero-content">
-                <h1 id="hero-heading">Welcome to My Portfolio</h1>
-                <p class="subtitle">Creating accessible, semantic, and performant web experiences</p>
-                <a href="projects.html" class="cta-button" aria-label="View my projects">
-                    View My Work
-                </a>
-            </div>
+
+        <section aria-labelledby="hero-heading">
+            <h2 id="hero-heading">Welcome to My Portfolio</h2>
+            <p>
+                I build accessible, responsive, and user-friendly web applications.
+            </p>
         </section>
 
-        <!-- Featured Projects Section -->
-        <section class="featured-projects" aria-labelledby="featured-heading">
-            <div class="container">
-                <h2 id="featured-heading">Featured Projects</h2>
-                
-                <div class="projects-grid" role="region" aria-label="Featured projects">
-                    <article class="project-card">
-                        <h3>
-                            <a href="projects.html#project-1">Accessible Dashboard</a>
-                        </h3>
-                        <p>A fully accessible data visualization dashboard built with semantic HTML and ARIA labels.</p>
-                        <ul class="tech-tags" aria-label="Technologies used">
-                            <li><span class="tag">HTML5</span></li>
-                            <li><span class="tag">CSS3</span></li>
-                            <li><span class="tag">JavaScript</span></li>
-                        </ul>
-                    </article>
+        <section aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills</h2>
 
-                    <article class="project-card">
-                        <h3>
-                            <a href="projects.html#project-2">E-Commerce Platform</a>
-                        </h3>
-                        <p>Responsive e-commerce platform with focus on accessibility and user experience.</p>
-                        <ul class="tech-tags" aria-label="Technologies used">
-                            <li><span class="tag">React</span></li>
-                            <li><span class="tag">Node.js</span></li>
-                            <li><span class="tag">MongoDB</span></li>
-                        </ul>
-                    </article>
+            <article>
+                <h3>Frontend Development</h3>
+                <p>HTML5, CSS3, JavaScript, React</p>
+            </article>
 
-                    <article class="project-card">
-                        <h3>
-                            <a href="projects.html#project-3">Content Management System</a>
-                        </h3>
-                        <p>Semantic, accessible CMS with intuitive navigation and comprehensive ARIA support.</p>
-                        <ul class="tech-tags" aria-label="Technologies used">
-                            <li><span class="tag">PHP</span></li>
-                            <li><span class="tag">MySQL</span></li>
-                            <li><span class="tag">AJAX</span></li>
-                        </ul>
-                    </article>
-                </div>
-
-                <a href="projects.html" class="view-all-link">
-                    View All Projects <span aria-hidden="true">→</span>
-                </a>
-            </div>
+            <article>
+                <h3>Accessibility</h3>
+                <p>WCAG Compliance, Semantic HTML, ARIA</p>
+            </article>
         </section>
 
-        <!-- Skills Section -->
-        <section class="skills" aria-labelledby="skills-heading">
-            <div class="container">
-                <h2 id="skills-heading">Core Competencies</h2>
-                
-                <div class="skills-grid" role="region" aria-label="Professional skills">
-                    <div class="skill-category">
-                        <h3>Frontend Development</h3>
-                        <ul aria-label="Frontend technologies">
-                            <li>HTML5 & Semantic Markup</li>
-                            <li>CSS3 & Responsive Design</li>
-                            <li>JavaScript & DOM APIs</li>
-                            <li>Accessibility & WCAG</li>
-                        </ul>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3>Best Practices</h3>
-                        <ul aria-label="Development best practices">
-                            <li>Web Performance Optimization</li>
-                            <li>SEO Fundamentals</li>
-                            <li>Testing & Debugging</li>
-                            <li>Version Control (Git)</li>
-                        </ul>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3>Tools & Frameworks</h3>
-                        <ul aria-label="Development tools">
-                            <li>React & Vue.js</li>
-                            <li>Node.js & Express</li>
-                            <li>Webpack & Build Tools</li>
-                            <li>Browser DevTools</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Call to Action Section -->
-        <section class="cta-section" aria-labelledby="cta-heading">
-            <div class="container">
-                <h2 id="cta-heading">Ready to work together?</h2>
-                <p>Let's discuss how I can help bring your vision to life.</p>
-                <a href="contact.html" class="cta-button-large" aria-label="Send me a message">
-                    Get In Touch
-                </a>
-            </div>
-        </section>
     </main>
 
-    <footer role="contentinfo">
-        <div class="container">
-            <div class="footer-content">
-                <section aria-labelledby="footer-about">
-                    <h3 id="footer-about">About This Portfolio</h3>
-                    <p>Built with semantic HTML5, WCAG accessibility standards, and modern web best practices.</p>
-                </section>
-
-                <section aria-labelledby="footer-nav">
-                    <h3 id="footer-nav">Quick Links</h3>
-                    <nav aria-label="Footer navigation">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                </section>
-
-                <section aria-labelledby="footer-social">
-                    <h3 id="footer-social">Connect</h3>
-                    <ul class="social-links">
-                        <li>
-                            <a href="https://github.com" aria-label="GitHub profile">
-                                GitHub
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://linkedin.com" aria-label="LinkedIn profile">
-                                LinkedIn
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com" aria-label="Twitter profile">
-                                Twitter
-                            </a>
-                        </li>
-                    </ul>
-                </section>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; <span id="year"></span> Farhath. All rights reserved.</p>
-                <ul class="legal-links">
-                    <li><a href="accessibility.html">Accessibility Statement</a></li>
-                </ul>
-            </div>
-        </div>
+    <footer>
+        <p>&copy; 2026 John Doe. All Rights Reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
