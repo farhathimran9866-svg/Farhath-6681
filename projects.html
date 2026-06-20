@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore my portfolio of web development projects. Semantic HTML, accessibility-first designs, and modern web technologies.">
+    <meta name="keywords" content="projects, web development, portfolio, case studies, HTML5">
+    <meta name="author" content="Farhath">
+    <meta property="og:title" content="Projects - Professional Portfolio">
+    <meta property="og:description" content="View my latest web development projects and case studies.">
+    <meta property="og:type" content="website">
+    <meta name="robots" content="index, follow">
+    <title>Projects - Professional Portfolio | Web Developer</title>
+    <link rel="canonical" href="https://yourportfolio.com/projects">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header role="banner">
+        <nav role="navigation" aria-label="Main navigation">
+            <div class="navbar-container">
+                <a href="index.html" class="logo">Portfolio</a>
+                
+                <button 
+                    class="menu-toggle" 
+                    aria-label="Toggle navigation menu" 
+                    aria-expanded="false"
+                    aria-controls="nav-menu">
+                    <span aria-hidden="true">☰</span>
+                </button>
+
+                <ul id="nav-menu" class="nav-menu" role="menubar">
+                    <li role="none">
+                        <a href="index.html" role="menuitem">Home</a>
+                    </li>
+                    <li role="none">
+                        <a href="projects.html" role="menuitem" aria-current="page">Projects</a>
+                    </li>
+                    <li role="none">
+                        <a href="about.html" role="menuitem">About</a>
+                    </li>
+                    <li role="none">
+                        <a href="contact.html" role="menuitem">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="page-header" aria-labelledby="page-title">
+            <div class="container">
+                <h1 id="page-title">My Projects</h1>
+                <p>A selection of my recent work demonstrating best practices in web development and accessibility.</p>
+            </div>
+        </section>
+
+        <section class="projects-section" aria-labelledby="projects-heading">
+            <div class="container">
+                <h2 id="projects-heading" class="sr-only">Project List</h2>
+                
+                <div class="projects-list" role="region" aria-label="All projects">
+                    <article class="project-item" id="project-1">
+                        <div class="project-image">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" aria-label="Accessible Dashboard project"><rect width="400" height="300" fill="#ecf0f1"/><text x="50%" y="50%" font-size="24" fill="#2c3e50" text-anchor="middle" dominant-baseline="middle">Accessible Dashboard</text></svg>
+                        </div>
+                        <div class="project-details">
+                            <h3>Accessible Dashboard</h3>
+                            <p class="project-description">A fully accessible data visualization dashboard built with semantic HTML5 and comprehensive ARIA labels.</p>
+                            <div class="project-links">
+                                <a href="#" class="btn-primary">View Project</a>
+                                <a href="#" class="btn-secondary">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-item" id="project-2">
+                        <div class="project-image">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" aria-label="E-Commerce Platform project"><rect width="400" height="300" fill="#ecf0f1"/><text x="50%" y="50%" font-size="24" fill="#2c3e50" text-anchor="middle" dominant-baseline="middle">E-Commerce Platform</text></svg>
+                        </div>
+                        <div class="project-details">
+                            <h3>E-Commerce Platform</h3>
+                            <p class="project-description">Responsive e-commerce platform with focus on accessibility and user experience. WCAG 2.1 AA compliant.</p>
+                            <div class="project-links">
+                                <a href="#" class="btn-primary">View Project</a>
+                                <a href="#" class="btn-secondary">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-item" id="project-3">
+                        <div class="project-image">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" aria-label="Content Management System project"><rect width="400" height="300" fill="#ecf0f1"/><text x="50%" y="50%" font-size="24" fill="#2c3e50" text-anchor="middle" dominant-baseline="middle">Content Management System</text></svg>
+                        </div>
+                        <div class="project-details">
+                            <h3>Content Management System</h3>
+                            <p class="project-description">Semantic, accessible CMS with intuitive navigation and comprehensive ARIA support.</p>
+                            <div class="project-links">
+                                <a href="#" class="btn-primary">View Project</a>
+                                <a href="#" class="btn-secondary">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Farhath. All rights reserved.</p>
+                <ul class="legal-links">
+                    <li><a href="accessibility.html">Accessibility Statement</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

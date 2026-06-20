@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accessibility Statement - WCAG 2.1 Level AA compliance details.">
+    <meta name="robots" content="index, follow">
+    <title>Accessibility Statement - Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header role="banner">
+        <nav role="navigation" aria-label="Main navigation">
+            <div class="navbar-container">
+                <a href="index.html" class="logo">Portfolio</a>
+                
+                <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                    <span aria-hidden="true">☰</span>
+                </button>
+
+                <ul id="nav-menu" class="nav-menu" role="menubar">
+                    <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+                    <li role="none"><a href="projects.html" role="menuitem">Projects</a></li>
+                    <li role="none"><a href="about.html" role="menuitem">About</a></li>
+                    <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="page-header" aria-labelledby="page-title">
+            <div class="container">
+                <h1 id="page-title">Accessibility Statement</h1>
+                <p>WCAG 2.1 Level AA Compliant</p>
+            </div>
+        </section>
+
+        <section class="accessibility-content">
+            <div class="container">
+                <h2>Commitment to Accessibility</h2>
+                <p>This portfolio website is designed to be accessible to all users, including those with disabilities. It meets WCAG 2.1 Level AA standards.</p>
+
+                <h2>Features</h2>
+                <ul>
+                    <li><strong>Semantic HTML5:</strong> Proper document structure</li>
+                    <li><strong>ARIA Labels:</strong> Screen reader support</li>
+                    <li><strong>Keyboard Navigation:</strong> Full Tab key support</li>
+                    <li><strong>Color Contrast:</strong> 4.5:1 ratio (WCAG AA)</li>
+                    <li><strong>Responsive:</strong> Works on all devices</li>
+                    <li><strong>Focus Indicators:</strong> Visible on all elements</li>
+                </ul>
+
+                <h2>Testing</h2>
+                <p>This site has been tested with automated tools and manual keyboard navigation.</p>
+
+                <h2>Feedback</h2>
+                <p>If you encounter any accessibility issues, please <a href="contact.html">contact me</a>.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Farhath. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

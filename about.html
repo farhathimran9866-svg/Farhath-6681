@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about me. A passionate web developer committed to building accessible web experiences.">
+    <meta name="keywords" content="about, web developer, experience">
+    <meta name="author" content="Farhath">
+    <meta name="robots" content="index, follow">
+    <title>About - Professional Portfolio | Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header role="banner">
+        <nav role="navigation" aria-label="Main navigation">
+            <div class="navbar-container">
+                <a href="index.html" class="logo">Portfolio</a>
+                
+                <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                    <span aria-hidden="true">☰</span>
+                </button>
+
+                <ul id="nav-menu" class="nav-menu" role="menubar">
+                    <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+                    <li role="none"><a href="projects.html" role="menuitem">Projects</a></li>
+                    <li role="none"><a href="about.html" role="menuitem" aria-current="page">About</a></li>
+                    <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="page-header" aria-labelledby="page-title">
+            <div class="container">
+                <h1 id="page-title">About Me</h1>
+                <p>Passionate developer dedicated to accessible, semantic web experiences.</p>
+            </div>
+        </section>
+
+        <section class="biography" aria-labelledby="bio-heading">
+            <div class="container">
+                <h2 id="bio-heading">My Journey</h2>
+                <article>
+                    <p>I'm a dedicated web developer with a passion for creating accessible, semantic, and performant web experiences. The web should be inclusive for everyone.</p>
+                    <p>I believe accessibility is fundamental to web development, not an afterthought.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Farhath. All rights reserved.</p>
+                <ul class="legal-links">
+                    <li><a href="accessibility.html">Accessibility Statement</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
